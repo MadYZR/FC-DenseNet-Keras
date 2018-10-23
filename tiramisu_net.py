@@ -86,7 +86,6 @@ def Tiramisu(
 #  Softmax          #
 #####################
     output = SoftmaxLayer(stack, n_classes)            
-#    output = Cropping2D(cropping=(10,10))(output)
     model=Model(inputs = inputs, outputs = output)    
     model.summary()
     
